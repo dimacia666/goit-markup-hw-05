@@ -29,10 +29,10 @@
   </head>
   <body>
     <header class="header">
-      <!-- Navigation -->
-
       <div class="container">
         <div class="header-container">
+          <!-- Navigation -->
+
           <nav class="header-nav">
             <a class="logo" href="./index.html"
               ><span class="accent">Web</span>Studio</a
@@ -76,7 +76,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">
+          <button class="hero-button" type="button" data-modal-open>
             <span class="hero-button-text">Order Service</span>
           </button>
         </div>
@@ -460,5 +460,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal  -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/icons.svg#icon-close1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
