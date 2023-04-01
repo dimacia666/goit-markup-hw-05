@@ -112,8 +112,7 @@ h6 {
     position: relative;
 }
 
-
-.current .nav-link::after {
+.nav-link::after {
     position: absolute;
     bottom: -3px;
     width: 100%;
@@ -123,7 +122,6 @@ h6 {
     display: block;
     border-radius: 2px;
     transition: opacity 250ms;
-    transform: translateY(-125%);
 }
 
 .nav-link:active {
