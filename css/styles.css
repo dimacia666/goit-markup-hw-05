@@ -643,6 +643,9 @@ h6 {
     position: absolute;
     top: 24px;
     right: 24px;
+    outline: 0;
+    border: 0;
+    background-color: #FCFCFC;
 }
 
 .modal-close-icon {
