@@ -39,8 +39,6 @@ h6 {
     margin: 0;
 }
 
-
-
 .section {
     padding: 120px 0;
 }
@@ -114,7 +112,8 @@ h6 {
     position: relative;
 }
 
-.nav-link::after {
+
+.current .nav-link::after {
     position: absolute;
     bottom: -3px;
     width: 100%;
@@ -124,19 +123,18 @@ h6 {
     display: block;
     border-radius: 2px;
     transition: opacity 250ms;
-
+    transform: translateY(-125%);
 }
 
 .nav-link:active {
     color: var(--color-link-active);
 }
 
-.nav-link:hover {
-    color: var(--color-link-active);
-
-}
-
+.nav-link:hover,
 .nav-link:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--color-link-active);
 }
 
@@ -155,11 +153,11 @@ h6 {
     color: var(--color-link-active);
 }
 
-.address-link:hover {
-    color: var(--color-link-active);
-}
-
+.address-link:hover,
 .address-link:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--color-link-active);
 }
 
@@ -201,11 +199,11 @@ h6 {
     display: block;
 }
 
-.hero-button:hover {
-    background-color: var(--color-link-active);
-}
-
+.hero-button:hover,
 .hero-button:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-link-active);
 }
 
@@ -323,13 +321,14 @@ h6 {
     border-radius: 50%;
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-link-active);
 }
 
-.socials-link:focus {
-    background-color: var(--color-link-active);
-}
 
 .socials-icon {
     width: 16px;
@@ -361,6 +360,9 @@ h6 {
 
 .costomers-link:hover,
 .costomers-link:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--color-link-active);
     fill: var(--color-link-active);
 }
@@ -372,6 +374,9 @@ h6 {
 
 .costomers-svg:hover,
 .costomers-svg:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--color-link-active);
     fill: var(--color-link-active);
 }
@@ -437,11 +442,11 @@ h6 {
     border-radius: 50%;
 }
 
-.footer-socials-link:hover {
-    background-color: var(--color-footer-link-active);
-}
-
+.footer-socials-link:hover,
 .footer-socials-link:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-footer-link-active);
 }
 
@@ -480,14 +485,11 @@ h6 {
     margin: 0;
 }
 
-.search:hover {
-    background-color: var(--color-link-active);
-    color: var(--color-main-bg);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}
-
+.search:hover,
 .search:focus {
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-link-active);
     color: var(--color-main-bg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -545,12 +547,11 @@ h6 {
     display: block;
 }
 
-.design-link:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-}
-
+.design-link:hover,
 .design-link:focus {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
@@ -589,6 +590,9 @@ h6 {
 }
 
 .design-item:hover .design-description {
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
 }
 
