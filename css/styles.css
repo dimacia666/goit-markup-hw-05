@@ -110,11 +110,17 @@ h6 {
     font-weight: 500;
     text-decoration: none;
     position: relative;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link::after {
+.current {
     position: absolute;
-    bottom: -3px;
+}
+
+.current::after {
+    bottom: -4px;
     width: 100%;
     height: 4px;
     background-color: currentColor;
@@ -124,15 +130,14 @@ h6 {
     transition: opacity 250ms;
 }
 
+
+
 .nav-link:active {
     color: var(--color-link-active);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--color-link-active);
 }
 
@@ -144,7 +149,9 @@ h6 {
     color: var(--color-secondary);
     text-decoration: none;
     font-style: normal;
-
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:active {
@@ -153,9 +160,6 @@ h6 {
 
 .address-link:hover,
 .address-link:focus {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--color-link-active);
 }
 
@@ -195,13 +199,13 @@ h6 {
     letter-spacing: var(--leter-spacing-button);
     margin: 0 auto;
     display: block;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-link-active);
 }
 
@@ -317,13 +321,13 @@ h6 {
     height: 100%;
     background-color: var(--color-accent);
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
 .socials-link:focus {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-link-active);
 }
 
@@ -354,13 +358,13 @@ h6 {
     height: 88px;
     align-items: center;
     fill: #8E8F99;
+    transition-property: background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .costomers-link:hover,
 .costomers-link:focus {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--color-link-active);
     fill: var(--color-link-active);
 }
@@ -368,13 +372,13 @@ h6 {
 .customers-svg {
     width: 104px;
     height: 56px;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .costomers-svg:hover,
 .costomers-svg:focus {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--color-link-active);
     fill: var(--color-link-active);
 }
@@ -438,13 +442,13 @@ h6 {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-footer-link-active);
 }
 
@@ -481,13 +485,13 @@ h6 {
     color: var(--color-accent);
     letter-spacing: var(--leter-spacing-button);
     margin: 0;
+    transition-property: background-color, color, box-shadow, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .search:hover,
 .search:focus {
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-link-active);
     color: var(--color-main-bg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -501,7 +505,7 @@ h6 {
 }
 
 .button-website {
-    width: 118px;
+    width: 120px;
     height: 48px;
 }
 
@@ -511,7 +515,7 @@ h6 {
 }
 
 .button-design {
-    width: 101px;
+    width: 100px;
     height: 48px;
 }
 
@@ -543,13 +547,13 @@ h6 {
 .design-link {
     text-decoration: none;
     display: block;
+    transition-property: box-shadow, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .design-link:hover,
 .design-link:focus {
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
@@ -558,6 +562,9 @@ h6 {
     flex-basis: calc((100% - 48px) / 3);
     background-color: var(--color-main-bg);
     border: 1px solid #E7E9FC;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .design-description-img {
@@ -576,7 +583,6 @@ h6 {
 }
 
 .design-description {
-
     background-color: #4D5AE5;
     position: absolute;
     top: 0;
@@ -584,13 +590,14 @@ h6 {
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms;
-}
-
-.design-item:hover .design-description {
+    transition: transform;
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.design-item:hover .design-description {
+
     transform: translateY(0);
 }
 
@@ -640,18 +647,36 @@ h6 {
 }
 
 .modal-close {
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 24px;
     right: 24px;
+    width: 24px;
+    height: 24px;
     outline: 0;
-    border: 0;
-    background-color: #FCFCFC;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: #404BBF;
 }
 
 .modal-close-icon {
     display: block;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    fill: #2E2F42;
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+    fill: #FFFFFF;
 }
